@@ -15,4 +15,5 @@ Gem::Specification.new do |s|
 
   s.files        = Dir['README.md', 'lib/**/*']
   s.require_path = 'lib'
+  s.add_dependency('tidy_ffi', '>= 0.1.4')
 end
