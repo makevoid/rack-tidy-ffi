@@ -23,7 +23,7 @@ add this to your Gemfile if you are using bundler:
 
     gem "rack-tidy-ffi", ">= 0.2.1", require: "rack-tidy-ffi"
     
-if you are using rails you can add this in your config/environment.rb if you want to use the gem as a middleware:
+if you are using rails you can add this in your config/application.rb if you want to use the gem as a middleware:
 
     config.middleware.use RackTidyFFI
     
