@@ -1,2 +1,3 @@
 .DS_Store
 rack-tidy-ffi-*.gem
+Gemfile.lock
