@@ -2,6 +2,9 @@
 
 Rack middleware to automatically tidy HTML output using tidy_ffi.
 
+> **Note:** This is a legacy project created as a simple drop-in tool for development environments. While functional for basic HTML tidying, it's not recommended for production use. For production applications requiring HTML validation and cleanup, consider implementing a more robust solution with proper error handling, performance optimization, and modern HTML5 support.
+
+
 ## Features
 
 - Uses `tidy_ffi`
