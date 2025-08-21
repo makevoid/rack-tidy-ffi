@@ -73,4 +73,4 @@ https://github.com/makevoid/rack-tidy-ffi
 
 ----
 
-### [More documentation](https://github.com/makevoid/rack-tidy-ffi/wiki/AI-Generated-Documentation-%E2%80%90-Claude-Opus-4.1)
+### [More documentation]([https://github.com/makevoid/rack-tidy-ffi/wiki/AI-Generated-Documentation-%E2%80%90-Claude-Opus-4.1](https://github.com/makevoid/rack-tidy-ffi/wiki/Extra-Documentation))
