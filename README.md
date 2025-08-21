@@ -1,40 +1,74 @@
 # RackTidyFFI
 
-## Rack middleware to tidy application output
+Rack middleware to automatically tidy HTML output using tidy_ffi.
 
-- Works with ruby 1.9
-- uses tidy_ffi instead of tidy (broken on 1.9 because of Ruby DL changes)
+## Features
 
+- Uses `tidy_ffi`
+- Automatically cleans and formats HTML output from your Rack application
 
 ## Installation
 
-    gem install rack-tidy-ffi
+Add to your Gemfile:
+
+```ruby
+gem 'rack-tidy-ffi', '>= 0.2.1', require: 'rack-tidy-ffi'
+```
+
+Or install directly:
+
+```bash
+gem install rack-tidy-ffi
+```
 
 ## Usage
 
-in your config.ru:
+### Rack (config.ru)
 
-    require 'rack-tidy-ffi'
-    
-    use RackTidyFFI
-    
-    
-add this to your Gemfile if you are using bundler: 
+```ruby
+require 'rack-tidy-ffi'
 
-    gem "rack-tidy-ffi", ">= 0.2.1", require: "rack-tidy-ffi"
-    
-if you are using rails you can add this in your config/application.rb if you want to use the gem as a middleware:
+use RackTidyFFI
+run YourApp
+```
 
-    config.middleware.use RackTidyFFI
-    
-    
+### Rails
+
+Add to `config/application.rb`:
+
+```ruby
+config.middleware.use RackTidyFFI
+```
+
+### Sinatra
+
+```ruby
+require 'rack-tidy-ffi'
+
+use RackTidyFFI
+```
+
+## Examples
+
+- **Sinatra Example**: https://gist.github.com/2347448
+- **Rails Example**: https://github.com/makevoid/example_rack-tidy-ffi
+
 ## Changelog
 
-- 0.2.1 added Rails support
-- 0.2   added gem dependency
+- **0.2.1** - Added Rails support
+- **0.2.0** - Added gem dependency
+- **0.1.0** - Initial release
 
+## Author
 
-## Usage Example:
+Francesco Canessa (makevoid) - https://github.com/makevoid
 
-- Sinatra: https://gist.github.com/2347448
-- Rails: https://github.com/makevoid/example_rack-tidy-ffi
+## License
+
+MIT License
+
+## Repository
+
+https://github.com/makevoid/rack-tidy-ffi
+
+----
